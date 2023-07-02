@@ -32,14 +32,6 @@ class isPalindrome {
 			return true;
 		}
 
-		// Nums at the start and the end of original number
-		$side_digits = [substr($num, 0, 1), substr($num, -1, 1)];
-		$valid_side_digits = [1, 3, 7, 9];
-	
-		if (!array_intersect($side_digits, $valid_side_digits)) {
-			return false;
-		}
-
 		$sum = 0;
 		$result_num = $num;
 		while ($result_num) {
